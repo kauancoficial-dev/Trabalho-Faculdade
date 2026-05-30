@@ -1,7 +1,7 @@
 :root {
     --marron-escuro: #3B2A1A;
     --btnP: #A04A2A;
-    --icons: #6B7A3A;
+    --icons: #6b7a3a;
     --main-color: #FFF5E1;
     --border: 0.1rem solid #99999944;
     --font-size: 10px;
@@ -118,7 +118,7 @@ body {
 .content p {
     font-size: 1.7rem;
     font-weight: 407;
-    color: #58432e;
+    color: #7e510d;
     margin-bottom: 1rem;
     padding: 1rem;
     line-height: 1;
