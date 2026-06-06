@@ -63,16 +63,14 @@ session_start();
 
     </header>
 
-    <div class="home-container">
+      <div class="home-container">
 
         <section id="home">
 
             <div class="content">
 
                 <h3>ESPALHANDO O AROMA DE CAFÉ E FELICIDADE EM FORMA DE PÃO</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis at quaerat laborum quod dolorem
-                    impedit, accusamus blanditiis aspernatur pariatur doloremque ipsam. Cum debitis, accusantium earum
-                    deleniti temporibus tenetur illo deserunt!</p>
+                <p>No Coffee & Bread, servimos cafés e pães artesanais em um ambiente acolhedor, proporcionando sabores únicos e momentos especiais.
                 <a href="#" class="btn">Venha Conhecer</a>
 
             </div>
@@ -95,17 +93,13 @@ session_start();
 
                 <h3>O que é o Coffe And Bread?</h3>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Doloribus, quisquam
-                    voluptate. Doloribus, quisquam voluptate. Doloribus, quisquam voluptate. Doloribus, quisquam
-                    voluptate. Doloribus, quisquam voluptate. Doloribus, quisquam voluptate. Doloribus, quisquam
-                </p>
-                <p>
-                    voluptate. Doloribus, quisquam voluptate. Doloribus, quisquam voluptate. Doloribus, quisquam
-                    voluptate. Doloribus, quisquam voluptate. Doloribus, quisquam voluptate. Doloribus, quisquam
-                    voluptate. Doloribus, quisquam voluptate. Doloribus, quisquam voluptate. Doloribus, quisquam
-                    voluptate.
-                </p>
+              <p>
+O Coffee & Bread nasceu da paixão por cafés especiais e pães artesanais. Nossa missão é oferecer produtos frescos, saborosos e preparados com dedicação para proporcionar experiências inesquecíveis.
+</p>
 
+               <p>
+Valorizamos a qualidade dos ingredientes, o atendimento acolhedor e um ambiente confortável para que cada visita seja um momento especial.
+</p>
                 <a href="#" class="btne">Saiba Mais</a>
 
             </div>
@@ -210,9 +204,7 @@ session_start();
 
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Doloribus, quisquam
-                    voluptate. Dolorib voluptate. Doloribus, qu
-                    voluptate.</p>
+                <p>Excelente atendimento e produtos sempre frescos. O cappuccino é delicioso e os pães têm qualidade excepcional.</p>
 
                 <img src="./img/perfil.png" alt="cliente1">
 
@@ -242,9 +234,7 @@ session_start();
 
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Doloribus, quisquam
-                    voluptate. Dolorib voluptate. Doloribus, qu
-                    voluptate.</p>
+                <p>Ambiente agradável, atendimento rápido e produtos muito saborosos. Uma ótima opção para tomar café e relaxar.</p>
 
                 <img src="./img/perfil.png" alt="cliente1">
 
@@ -275,9 +265,7 @@ session_start();
 
                 </div>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate. Doloribus, quisquam
-                    voluptate. Dolorib voluptate. Doloribus, qu
-                    voluptate.</p>
+                <p>Os cafés são excelentes e os produtos são preparados com muito cuidado. Recomendo para todos que procuram qualidade.</p>
 
                 <img src="./img/perfil.png" alt="cliente1">
 
@@ -328,9 +316,10 @@ session_start();
             <img width="30" height="30" src="https://img.icons8.com/ios/30/facebook-new.png" alt="facebook-new" />
             <img width="30" height="30" src="https://img.icons8.com/ios/30/twitterx--v2.png" alt="twitterx--v2" />
 
-        </div>
-
-        <div class="credit">Criado por <span>Kauã Castro/Jan Lucas/Luscas/Daniel</span> | Todos os direitos reservados!</div>
+       <div class="credit">
+    Criado por <span>Kauã Castro • Jan Lucas • Lucas • Daniel</span> |
+    Todos os direitos reservados.
+</div>
 
 </body>
 
