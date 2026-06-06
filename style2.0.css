@@ -1,7 +1,7 @@
 :root {
     --marron-escuro: #3B2A1A;
     --btnP: #A04A2A;
-    --icons: #6b7a3a;
+    --icons: #C68642;
     --main-color: #FFF5E1;
     --border: 0.1rem solid #99999944;
     --font-size: 10px;
@@ -15,7 +15,7 @@
     text-decoration: none;
     text-decoration: capitalize;
     transition: 0.2s linear;
-    font-family: "Roboto", sans-serif;
+   font-family: 'Roboto', sans-serif;
 
 }
 
@@ -111,14 +111,14 @@ body {
 
 .content h3 {
     font-size: 5rem;
-    color: #644b33;
+    color: #4A2C1D;
     padding: 7rem 0.8rem 0rem;
 }
 
 .content p {
     font-size: 1.7rem;
     font-weight: 407;
-    color: #7e510d;
+   color: #392110;
     margin-bottom: 1rem;
     padding: 1rem;
     line-height: 1;
@@ -127,7 +127,7 @@ body {
 
 .titulo {
     font-size: 3rem;
-    color: #58432e;
+    color: #724026;
     text-align: center;
     padding: 1rem;
     padding-top: 5rem;
@@ -141,7 +141,7 @@ body {
 .about .row {
     display: flex;
     align-items: center;
-    background-color: #6B7A3A;
+    background-color: #8B5E3C;
     border-radius: 1rem;
     padding: 2rem;
 }
@@ -162,7 +162,7 @@ body {
     padding: 1rem 3rem;
     font-size: 1.7rem;
     background: var(--btnP);
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     color: #fff;
     margin-top: 2rem;
     cursor: pointer;
@@ -171,7 +171,7 @@ body {
 }
 
 .btne:hover {
-    background: #58432e !important;
+   background:#8B5E3C;
     letter-spacing: 0.1rem;
 }
 
