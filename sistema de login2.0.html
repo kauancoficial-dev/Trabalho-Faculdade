@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login 2.0</title>
+    <link rel="stylesheet" href="sistema de login.css">
+</head>
+
+<body>
+    <!-- main é a parte principal -->
+    <main class="container">
+        <!-- form é o formulário, onde o usuario vai digitar os dados para logar -->
+        <form action="test2.0.html" method="post">
+            <h1>Login</h1>
+            <div class="input-box">
+                <!--placeholder= nome que fica dentro do input para o usuario saber o que deve ser digitado, nesse caso é usuario-->
+                <input name="email" placeholder="usuario" type="email">
+                <div class="icone">
+                    <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/user.png" alt="user" />
+                </div>
+            </div>
+            <div class="input-box">
+                <input name="senha" placeholder="senha" type="password">
+                <div class="icone">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/lock--v1.png"
+                        alt="lock--v1" />
+                </div>
+                <div class="remember-forgot">
+                    <!--label É o texto que descreve o input-->
+                    <label>
+                        <!-- input É o campo onde o usuário digita ou interage.-->
+                        <input type="checkbox" name="remember">Lembrar-me
+                    </label>
+                    <a href="#">Esqueci a senha</a>
+                </div>
+            </div>
+            <button type="submit">Entrar</button>
+            <div class="cadastro">
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

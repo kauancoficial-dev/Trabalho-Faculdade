@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*box-sizing controla como o tamanho da caixa é geradodo, border-box inclui o padding e a borda no tamanho total da caixa, enquanto content-box (padrão) não inclui */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: transparent;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: -5px -5px 20px 5px rgba(23, 26, 24, 0.219), 5px 5px 20px 5px rgba(10, 10, 10, 0.219);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 420px;
+    backdrop-filter: blur(10px);
+}
+
+/*margin-bottom é a margem inferior, ou seja, o espaço entre o elemento e os elementos abaixo dele */
+form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: aquamarine;
+    border-color: rgba(240, 248, 255, 0);
+    font-weight: 600;
+    margin-top: 50px;
+}
+button:hover {
+    background-color: #57aa9c;
+   
+    animation: pulse 1.8s infinite;
+}
+ @keyframes pulse {
+        0%,100% {
+            transform: scale(1);opacity: 1;
+        }
+        50% {
+            transform: scale(1.03);opacity: 8;
+        }
+          }
+
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+/*padding é o espaço entre o conteúdo do elemento e a borda do elemento, nesse caso é primeiro valor em cima, segundo em direita, terceiro em baixo e quarto em esquerda */
+.input-box input {
+    width: 100%;
+    height: 100%;
+    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    border-radius: 40px;
+    background-color: transparent;
+}
+
+.input-box input::placeholder {
+    color: #0e0d0d;
+}
+
+/*translateY é uma função de transformação que move um elemento ao longo do eixo Y (vertical) em uma quantidade especificada. O valor pode ser positivo (para baixo) ou negativo (para cima). No exemplo, translateY(-50%) move o elemento para cima em 50% da sua própria altura, centralizando-o verticalmente em relação ao seu ponto de referência. */
+.input-box .icone {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box .icone img {
+    width: 23px;
+    height: 23px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/*white-space: nowrap é uma propriedade CSS que impede que o texto dentro de um elemento seja quebrado em várias linhas. Em vez disso, o texto permanecerá em uma única linha, mesmo que ultrapasse a largura do contêiner. Se o texto for muito longo para caber em uma linha, ele pode ser cortado ou causar um estouro do layout, dependendo do comportamento do contêiner pai. */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.cadastro {
+    text-align: center;
+    margin-top: 20px;
+}
+a {
+    color: #0e0d0d;
+}
