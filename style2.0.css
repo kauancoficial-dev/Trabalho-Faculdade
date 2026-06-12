@@ -13,14 +13,12 @@
     border: none;
     outline: none;
     text-decoration: none;
-    text-decoration: capitalize;
+    text-transform: capitalize; /* Corrigido de text-decoration */
     transition: 0.2s linear;
-   font-family: 'Roboto', sans-serif;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-
     background: var(--main-color);
     padding: 0 auto;
     margin: 0 auto;
@@ -55,14 +53,12 @@ body {
     margin: 0.5rem;
     font-size: 1.3rem;
     align-items: center;
-
 }
 
 .navpub a:hover {
     color: var(--icons);
     border-bottom: 0.1rem solid var(--icons);
     padding-bottom: 1rem;
-    font-size: 1rem;
 }
 
 .icons img {
@@ -71,9 +67,7 @@ body {
 }
 
 .icons img:hover {
-
-    width: 33px;
-    height: 33px;
+    transform: scale(1.1); /* Suavizado o efeito de crescer sem quebrar layout */
 }
 
 .btn {
@@ -89,14 +83,12 @@ body {
 }
 
 .home-container {
-    background-image: url(./img/background.jpg.jpg);
-    background-size: contain;
+    background-image: url(./img/background.jpg); /* Corrigido de .jpg.jpg */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 9rem 0rem;
     margin-top: -3rem;
-
-
 }
 
 .home-container section {
@@ -118,11 +110,10 @@ body {
 .content p {
     font-size: 1.7rem;
     font-weight: 407;
-   color: #392110;
+    color: #392110;
     margin-bottom: 1rem;
     padding: 1rem;
-    line-height: 1;
-
+    line-height: 1.4;
 }
 
 .titulo {
@@ -131,7 +122,6 @@ body {
     text-align: center;
     padding: 1rem;
     padding-top: 5rem;
-
 }
 
 .titulo span {
@@ -171,7 +161,7 @@ body {
 }
 
 .btne:hover {
-   background:#8B5E3C;
+    background: #8B5E3C;
     letter-spacing: 0.1rem;
 }
 
@@ -188,6 +178,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     gap: 1rem;
+    padding: 2rem;
 }
 
 .box-container .box {
@@ -200,7 +191,8 @@ body {
 }
 
 .menu .box-container .box:hover {
-    background: #6b7a3a;
+    background: #f5ebd5; /* Ajustado para manter contraste com o texto */
+    border-color: var(--btnP);
 }
 
 .menu .box-container .box h3 {
@@ -235,7 +227,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 0;
-
 }
 
 .review .box-container .box {
@@ -255,7 +246,6 @@ body {
 .review .box-container .box .quotes {
     display: flex;
     justify-content: flex-end;
-
 }
 
 .quotes img {
@@ -284,10 +274,69 @@ body {
     color: #fff;
     text-align: center;
     padding: 0.5rem;
-
 }
 
 .footer img {
     font-size: 1rem;
     cursor: pointer;
+}
+
+/* ===== ESTILIZAÇÃO DO PAINEL DO CARRINHO ===== */
+#overlay-carrinho {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9998;
+}
+
+#painel-carrinho {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 340px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+#carrinho-lista {
+    list-style: none;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+#carrinho-lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 0.1rem solid #eee;
+    font-size: 1.4rem;
+    color: var(--marron-escuro);
+    text-transform: none; /* Garante que o texto fique normal */
+}
+
+#carrinho-lista li button {
+    background: none;
+    border: none;
+    color: #c0392b;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#carrinho-lista li button:hover {
+    transform: scale(1.2);
 }
