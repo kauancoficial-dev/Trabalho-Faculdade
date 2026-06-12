@@ -77,7 +77,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
          <main class="container">
  
          <form method="POST">
-          
 
           <h1>Login</h1>
 
