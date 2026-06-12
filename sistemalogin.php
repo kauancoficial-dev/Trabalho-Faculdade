@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $_SESSION['usuario_email'] = $usuario['email'];
 
                  
-                    header("Location: http://localhost/TrabalhoFaculdade/index.php");
+                    header("Location: http://localhost/Trabalho-Faculdade/index.php");
  exit;
  } else {
  $msg = "Senha incorreta!";
