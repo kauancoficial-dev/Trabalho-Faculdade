@@ -79,6 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
          <form method="POST">
 
           <h1>Login</h1>
+          
 	 <div class="input-box">
 
             <input type="email" placeholder="usuario" name="email" value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
