@@ -68,25 +68,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
    <head>
       <meta charset="UTF-8">
       <title>Login</title>
+       <link rel="stylesheet" href="sistema de login.css">
+
     </head>
     
     <body>
 
-         
-         <h2>Acesso ao Sistema</h2>
+         <main class="container">
+ 
+         <form method="POST">
 
-        <form method="POST">
+          <h1>Login</h1>
+	 <div class="input-box">
 
-          <p>
-            <label>E-mail</label>
-            <input type="email" name="email" value="<?= $_POST['email'] ?? '' ?>">
-          </p> 
+            <input type="email" placeholder="usuario" name="email" value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
+                <div class="icone">
 
-          <p>
-            <label>Senha</label>
-            <input type="password" name="senha">
-          </p>
+	   <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/user.png" alt="user" />
+                </div>
+            </div>
+	<div class="input-box">
 
+            <input type="password" placeholder="senha" name="senha">
+	    <div class="icone">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/lock--v1.png"
+                        alt="lock--v1" />
+                </div>
+               </div>
+
+          
           <p>
             <button type="submit" name="acao" value="entrar">Entrar</button>
             <button type="submit" name="acao" value="cadastrar">Cadastrar</button> 
@@ -100,6 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <?php endif; ?>
 
         </form>
+	 </main>
 
     </body>
 
